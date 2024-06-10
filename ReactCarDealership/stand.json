@@ -1,0 +1,117 @@
+{
+  "cars": [
+    {
+      "_id": "1",
+      "brand": "BMW",
+      "model": "X5",
+      "year": "2019",
+      "price": "60,000",
+      "kms": "0",
+      "color": "Dark Blue",
+      "interior": "Grey",
+      "fuel": "Gasoline",
+      "images": [
+        "https://cdn.motor1.com/images/mgl/RoV9A/s1/2019-bmw-x5-xdrive40i.jpg",
+        "https://i.gaw.to/content/photos/34/99/349946_2019_BMW_X5.jpg",
+        "https://www.cnet.com/a/img/resize/bafc4037204147acc58c030e88476df5e5aa81e1/hub/2018/09/27/c6ffab3a-64e2-406a-acf7-a9c7c3072420/ogi1-x5.jpg?auto=webp&fit=crop&height=675&width=1200",
+        "https://images.cars.com/cldstatic/wp-content/uploads/img1747693-1537979653013.jpg",
+        "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2018/09/28/15381346442808.jpg"
+      ]
+    },
+    {
+      "_id": "2",
+      "brand": "Audi",
+      "model": "A4",
+      "year": "2018",
+      "price": "40,000",
+      "kms": "10,000",
+      "color": "Nardo Grey",
+      "interior": "Black",
+      "fuel": "Gasoline",
+      "images": [
+        "https://www.razaoautomovel.com/wp-content/uploads/2018/06/A187130_large-e1530096462291_925x520_acf_cropped.jpg"
+      ]
+    },
+    {
+      "_id": "3",
+      "brand": "Mercedes",
+      "model": "C200",
+      "year": "2017",
+      "price": "35,000",
+      "kms": "20,000",
+      "color": "Silver",
+      "interior": "Black",
+      "fuel": "Gasoline",
+      "images": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcgL2GYd3Zo0Me8TrTjLNdb3m3_ZfRIX-3DsyKQXF09A-Q9nqq33FtsxTJadeuRkq1msnMu5SN1NVMRbKFBXQLJ_vbjaSWsiqkETTOmYV58YFcwn9kja2aJ9s6L72gLAQo4sogBGvQZqcl/s1600/c180-praia-rio-frente.jpg"
+      ]
+    },
+    {
+      "_id": "4",
+      "brand": "Range Rover",
+      "model": "Evoque",
+      "year": "2019",
+      "price": "50,000",
+      "kms": "23190",
+      "color": "Red",
+      "interior": "Dark Grey",
+      "fuel": "Gasoline",
+      "images": [
+        "https://media.autoexpress.co.uk/image/private/s--X-WVjvBW--/f_auto,t_content-image-full-desktop@1/v1562247420/autoexpress/2019/03/_1308532.jpg"
+      ]
+    },
+    {
+      "_id": "5",
+      "brand": "Nissan",
+      "model": "GTR",
+      "year": "2015",
+      "price": "120,000",
+      "kms": "15,000",
+      "color": "White",
+      "interior": "Black",
+      "fuel": "Gasoline",
+      "images": [
+        "https://www.autotrader.com/wp-content/uploads/2021/10/2017-nissan-gt-r-nismo-driving.jpg",
+        "https://www.alainclass.com/wp-content/uploads/2020/11/2017-Nissan-GT-R-R35-Nismo-WHITE-0014-3.jpg",
+        "https://i.pinimg.com/originals/97/ac/5b/97ac5bb3ebb378929a501483c3265e1d.jpg"
+      ]
+    },
+    {
+      "_id": "6",
+      "brand": "Toyota",
+      "model": "Supra",
+      "year": "2020",
+      "price": "60,000",
+      "kms": "23,700",
+      "color": "Red",
+      "interior": "Red",
+      "fuel": "Gasoline",
+      "images": [
+        "https://media.drive.com.au/obj/tx_q:50,rs:auto:1920:1080:1/caradvice/private/5e505f0be6434549c20eea1e6f7c1922"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "_id": "1",
+      "name": "John Doe",
+      "username": "johndoe",
+      "email": "johndoe@gmail.com",
+      "password": "12345"
+    },
+    {
+      "_id": "2",
+      "name": "Jane Doe",
+      "username": "janedoe",
+      "email": "janedoe@gmail.com",
+      "password": "12345"
+    },
+    {
+      "_id": "3",
+      "name": "John Smith",
+      "username": "johnsmith",
+      "email": "johnsmith@gmail.com",
+      "password": "12345"
+    }
+  ]
+}

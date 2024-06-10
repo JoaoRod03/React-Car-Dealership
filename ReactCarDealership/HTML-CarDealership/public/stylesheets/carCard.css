@@ -1,0 +1,46 @@
+.car-card{
+    background-color: rgb(180, 180, 180);
+    width: 390px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 10px black;
+    transition: box-shadow 0.3s ease;
+}
+
+.car-card a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.car-card:hover{
+    box-shadow: 0 0 20px black;
+    cursor: pointer;
+}
+
+.car-card img{
+    width: 300px;
+    height: 170px;
+    margin-top: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px black;
+}
+
+.car-card h2{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.car-card h3{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    margin-top: 0;
+}

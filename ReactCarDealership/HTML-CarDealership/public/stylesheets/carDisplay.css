@@ -1,0 +1,11 @@
+.car-display-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.car-display {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+}
