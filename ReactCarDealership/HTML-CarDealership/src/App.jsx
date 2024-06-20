@@ -12,6 +12,7 @@ function App() {
     const [wishlist, setWishlist] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [username, setUsername] = useState('');
 
     useEffect(() => {
         const fetchCars = async () => {
@@ -28,6 +29,14 @@ function App() {
 
         fetchCars();
     }, []);
+
+    useEffect(() => {
+        const storedUsername = localStorage.getItem('username');
+        if (storedUsername) {
+            setUsername(storedUsername);
+        }
+    }, []);
+
 
     function getCarById(id) {
         return cars.find(car => car._id === id);
@@ -50,7 +59,10 @@ function App() {
     const handleLogout = () => {
         setToken(null);
         localStorage.removeItem('token');
+        localStorage.removeItem('username'); 
+        setUsername(''); 
     };
+    
 
     if (loading) {
         return <div>Loading...</div>;
@@ -62,7 +74,7 @@ function App() {
 
     return (
         <Router>
-            <Header token={token} handleLogout={handleLogout} />
+            <Header token={token} handleLogout={handleLogout} username={username} />
             <Routes>
                 <Route path="/" element={<CarDisplay cars={cars} />} />
                 <Route path="/car/:id" element={<CarPageWrapper />} />

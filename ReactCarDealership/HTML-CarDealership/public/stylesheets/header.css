@@ -15,25 +15,27 @@
 
 .nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
 }
 
-.button {
+.button, .nav a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     background-color: #000000;
-    font-size: 24px;
     position: relative;
     overflow: hidden;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
 }
 
-.nav .button{
+.nav .button, .nav a{
     margin-left: 50px;
 }
 
-.button::after {
+.button::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -44,14 +46,7 @@
     transition: width 0.3s ease, left 0.3s ease;
 }
 
-.button:hover::after {
+.button:hover::after{
     width: 100%;
     left: 0;
 }
-  
-
-
-
-
-
-

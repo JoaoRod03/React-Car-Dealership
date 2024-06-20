@@ -54,6 +54,9 @@ function Login({ setToken }) {
         if (response.ok) {
             setToken(data.token);
             localStorage.setItem('token', data.token);
+            localStorage.setItem('username', data.username); 
+            setToken(data.token);
+            setUsername(data.username);
             navigate('/');
         } else {
             alert("Credenciais inválidas!");

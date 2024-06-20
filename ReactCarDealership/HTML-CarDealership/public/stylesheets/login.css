@@ -22,7 +22,7 @@
     width: 768px;
     max-width: 100%;
     min-height: 500px;
-    border: 2px solid #ffffff;
+    border: 2px solid #000000;
 }
 
 form {
@@ -51,12 +51,13 @@ input {
 
 .loginPageButton {
     border-radius: 20px;
-    border: 1px solid #ffffff;
+    border: 1px solid #000000;
     background-color: #ff4b2b;
     color: #ffffff;
     font-size: 12px;
     font-weight: bold;
     padding: 12px 45px;
+    margin-top: 10px;
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: transform 80ms ease-in;
@@ -83,8 +84,8 @@ input {
 }
 
 .overlay {
-    background: rgb(0, 0, 0);
-    color: #ffffff;
+    background: rgb(180, 180, 180);
+    color: #000000;
     position: absolute;
     left: -100%;
     height: 100%;

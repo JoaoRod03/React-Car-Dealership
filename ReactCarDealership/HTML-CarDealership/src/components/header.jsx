@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../public/stylesheets/header.css';
 
-function Header({ token, handleLogout }) {
+function Header({ token, handleLogout, username}) {
+
     return (
         <header className="header">
             <div className="menu">
@@ -12,7 +13,8 @@ function Header({ token, handleLogout }) {
                 {token ? (
                     <div>
                         <Link className="button" to="/wishlist">Wishlist</Link>
-                        <Link className="button" onClick={handleLogout}>Logout</Link>
+                        <button className="button" onClick={handleLogout}>Logout</button>
+                        <a style={{fontSize:'16px',cursor:"default"}}>Welcome {username}</a>
                     </div>
                 ) : (
                     <Link className="button" to="/login">Login</Link>

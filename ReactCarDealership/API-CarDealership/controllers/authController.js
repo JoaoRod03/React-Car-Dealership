@@ -27,12 +27,13 @@ export const login = (req, res) => {
     const user = users.find(user => user.username === username && user.password === password);
 
     if (user) {
-        const token = jwt.sign({ id: user._id }, secret, { expiresIn: '1h' });
-        res.json({ token });
+        const token = jwt.sign({ id: user._id, username: user.username }, secret, { expiresIn: '1h' });
+        res.json({ token, username }); 
     } else {
         res.status(401).json({ message: 'Invalid credentials' });
     }
 };
+
 
 export const register = (req, res) => {
     const { name, username, email, password } = req.body;
